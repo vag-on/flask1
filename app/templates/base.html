@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {% if title %}
+                {{ title }} - Microblog
+            {% else %}
+                Добро пожаловать - Microblog
+            {% endif %}
+        </title>
+    </head>
+    <body>
+        <div>Microblog: <a href="/index">Главня</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
